@@ -71,7 +71,9 @@ const Footer = () => {
                   placeholder="tes@gmail.com"
                 />
               </div>
-              <button className="bg-orange-400 p-3 font-bold text-white w-full text-center rounded-sm hover:bg-orange-500"></button>
+              <button className="bg-orange-400 p-3 font-bold text-white w-full text-center rounded-sm hover:bg-orange-500">
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
