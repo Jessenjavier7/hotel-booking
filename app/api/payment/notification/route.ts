@@ -5,6 +5,14 @@ import { prisma } from "@/lib/prisma";
 
 export const POST = async (request: Request) => {
   const data: PaymentProps = await request.json();
+
+  // console.log("Webhook received:", {
+  //   order_id: data.order_id,
+  //   status_code: data.status_code,
+  //   gross_amount: data.gross_amount,
+  //   signature_key_exists: Boolean(data.signature_key),
+  //   server_key_exists: Boolean(process.env.MIDTRANS_SERVER_KEY),
+  // });
   const reservationId = data.order_id;
 
   let responseData = null;
