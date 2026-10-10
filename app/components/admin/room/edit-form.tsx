@@ -5,7 +5,7 @@ import { type PutBlobResult } from "@vercel/blob";
 import { useRef, useState, useTransition } from "react";
 import Image from "next/image";
 import { BarLoader } from "react-spinners";
-import { Amenities } from "@/lib/generated/prisma";
+import { Amenities } from "@prisma/client";
 import { updateRoom } from "@/lib/action";
 import { RoomProps } from "@/types/room";
 
