@@ -3,7 +3,7 @@ import { PaymentProps } from "@/types/payment";
 import crypto from "crypto";
 import { prisma } from "@/lib/prisma";
 
-export const POST = async (request: Response) => {
+export const POST = async (request: Request) => {
   const data: PaymentProps = await request.json();
   const reservationId = data.order_id;
 
