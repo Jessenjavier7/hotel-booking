@@ -1,7 +1,6 @@
 import { Room } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { IoPeopleOutline } from "react-icons/io5";
 import { formatCurrency } from "@/lib/utils";
 

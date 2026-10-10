@@ -11,7 +11,7 @@ export const POST = async (request: Request) => {
 
   const transactionStatus = data.transaction_status;
   const paymentType = data.payment_type || null;
-  const fraudStatus = data.fraud_Status;
+  const fraudStatus = data.fraud_status;
   const statusCode = data.status_code;
   const grossAmount = data.gross_amount;
   const signatureKey = data.signature_key;
