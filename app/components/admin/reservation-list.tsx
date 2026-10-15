@@ -56,7 +56,9 @@ const ReservationList = async () => {
               <td className="px-6 py-4">
                 {formatDate(reservation.startDate.toISOString())}
               </td>
-              <td className="px-6 py-4">{reservation.endDate.toISOString()}</td>
+              <td className="px-6 py-4">
+                {formatDate(reservation.endDate.toISOString())}
+              </td>
               <td className="px-6 py-4">{reservation.Room.name}</td>
               <td className="px-6 py-4">{formatCurrency(reservation.price)}</td>
               <td className="px-6 py-4">
